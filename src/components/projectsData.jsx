@@ -1,9 +1,13 @@
+import p1 from "../../assets/Ampyre.png"
+import p2 from "../../assets/Masaipe.png"
+import p3 from "../../assets/PropertyDekho.png"
+import p4 from "../../assets/OCV.jpg"
 const projects = [
   {
     id: 1,
     name: "Ampyre Fitness Buddy.in(FrontEnd)",
     description: "🏋️♂️ FitTrack – Plan meals, create custom workouts, track progress, and shop smart — your all-in-one fitness & wellness app!",
-    image: "/assets/Ampyre.png",
+    image: p1,
     techStack: ["React", "Firebase (BAAS)", "Tailwind CSS"],
     github: "https://github.com/AnkitPradhan2004/Ampyre_Fitness_Buddy_App",
     demo: "https://ampyrefitnessbyankit.netlify.app/",
@@ -14,7 +18,7 @@ const projects = [
     id: 2,
     name: "Masaipe.in(FrontEnd)",
     description: "📚 MentorPro Manage classes, track payments with receipts, keep a full audit trail, and message mentors & admins — all in one app!",
-    image: "assets/Masaipe.png",
+    image: p2,
     techStack: ["React", "Firebase(BAAS)", "Tailwind CSS", "Framer Motion"],
     github: "https://github.com/AnkitPradhan2004/masaipe",
     demo: "https://masaipe.netlify.app/",
@@ -25,7 +29,7 @@ const projects = [
     id: 3,
     name: "Property Dekho.in (FullStack)",
     description: "🏠 PropertyDekho – Browse listings, connect with owners, and chat instantly with a built-in messaging system!",
-    image: "/assets/PropertyDekho.png",
+    image:p3,
     techStack: ["React", "Node", "Express", "Mongodb", "framer-motion"],
     github: "https://github.com/AnkitPradhan2004/Property_Dekho",
     demo: "https://property-dekho-in.onrender.com/",
@@ -36,7 +40,7 @@ const projects = [
     id: 4,
     name: "OCV",
     description: "A own choice voulnteer app , helps connecting individual volunteer to their choice of organisation and helping the needy ones",
-    image: "assets/OCV.jpg",
+    image: p4,
     techStack: ["Javascript", "Firebase"],
     github: "https://github.com/ankitpradhan/social-platform",
     demo: "https://social-platform-demo.vercel.app",

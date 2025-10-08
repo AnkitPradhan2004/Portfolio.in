@@ -71,7 +71,7 @@ const About = () => {
           {/* 🖼️ Photo */}
           <div className="flex-shrink-0 order-1 lg:order-1">
             <img
-              src="src/assets/images/me.png"
+              src="/assets/me.png"
               alt="Ankit Pradhan - Professional Photo"
               className="w-32 h-32 sm:w-40 sm:h-40 md:w-56 md:h-56 lg:w-80 lg:h-80 rounded-full object-cover border-2 sm:border-4 border-gray-200 shadow-lg"
             />

@@ -47,7 +47,7 @@ const Navbar = () => {
       <a href="#about" className="text-white hover:text-blue-400 transition-colors text-sm lg:text-base">About Me</a>
       <a href="#projects" className="text-white hover:text-blue-400 transition-colors text-sm lg:text-base">Projects</a>
       <a href="#contact" className="text-white hover:text-blue-400 transition-colors text-sm lg:text-base">Contact</a>
-      <a href="/src/assets/AnkitKumarPradhan.pdf" target="_blank" download className="text-white hover:text-blue-400 transition-colors text-sm lg:text-base">Resume</a>
+      <a href="/AnkitKumarPradhan.pdf" target="_blank" download className="text-white hover:text-blue-400 transition-colors text-sm lg:text-base">Resume</a>
     </div>
 
     {/* Menu Button - Mobile & Tablet */}
@@ -92,7 +92,7 @@ const Navbar = () => {
     <a href="#about" className="menu-link">About Me</a>
     <a href="#projects" className="menu-link">Projects</a>
     <a href="#contact" className="menu-link">Contact</a>
-    <a href="/src/assets/AnkitKumarPradhan.pdf" target="_blank" download className="menu-link">Resume</a>
+    <a href="/AnkitKumarPradhan.pdf" target="_blank" download className="menu-link">Resume</a>
   </div>
   
   {/* Mobile Side Menu - Left 50% */}
@@ -106,7 +106,7 @@ const Navbar = () => {
     <a href="#about" onClick={() => setMenuOpen(false)} className="mobile-menu-link">About Me</a>
     <a href="#projects" onClick={() => setMenuOpen(false)} className="mobile-menu-link">Projects</a>
     <a href="#contact" onClick={() => setMenuOpen(false)} className="mobile-menu-link">Contact</a>
-    <a href="/src/assets/AnkitKumarPradhan.pdf" target="_blank" download onClick={() => setMenuOpen(false)} className="mobile-menu-link">Resume</a>
+    <a href="/AnkitKumarPradhan.pdf" target="_blank" download onClick={() => setMenuOpen(false)} className="mobile-menu-link">Resume</a>
   </div>
 </div>
 

@@ -90,9 +90,8 @@ const Hero = () => {
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-[8vw] font-heading font-black leading-[0.9] tracking-tight mt-2 sm:mt-3 mb-4 sm:mb-6 text-white">
             Web Developer <br/> & Designer
           </h2>
-          <GradientButton text="Resume" link="/src/assets/AnkitKumarPradhan.pdf" className="gradient-btn" target="_blank" download="Ankit_Pradhan_Resume.pdf" />
+          <GradientButton text="Resume" link="/AnkitKumarPradhan.pdf" className="gradient-btn" target="_blank" download="AnkitKumarPradhan.pdf" />
         </div>
-
         {/* shape */}
         <div className="star absolute -z-1 top-1/4 sm:top-1/3 md:top-60 lg:top-32 right-[-15%] sm:right-[-15%] md:right-[-12%] lg:right-[-8%] opacity-80 sm:opacity-70 md:opacity-80 lg:opacity-90">
           <svg className='h-[25vh] sm:h-[30vh] md:h-[45vh] lg:h-[80vh] w-auto' viewBox="0 0 653 631" fill="none" xmlns="http://www.w3.org/2000/svg">

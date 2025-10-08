@@ -22,11 +22,11 @@ const Navbar = () => {
   const handleResumeClick = (e) => {
     e.preventDefault();
     // Open in new tab
-    window.open("/AnkitKumarPradhan.pdf", "_blank");
+    window.open("/Ankit_Pradhan_Resume.pdf", "_blank");
     // Trigger download
     const link = document.createElement("a");
-    link.href = "/AnkitKumarPradhan.pdf";
-    link.download = "AnkitKumarPradhan.pdf";
+    link.href = "/Ankit_Pradhan_Resume.pdf";
+    link.download = "Ankit_Pradhan_Resume.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);

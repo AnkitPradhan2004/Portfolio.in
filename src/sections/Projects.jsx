@@ -55,9 +55,10 @@ const Projects = () => {
                         style={{
                           backgroundColor: hoveredCard === id ? `${themeColor}30` : `${themeColor}15`,
                           color: themeColor,
-                          borderColor: `${themeColor}30`
+                          borderColor: `${themeColor}30`,
+                          animationDelay: `${index * 0.1}s`
                         }}
-                        style={{animationDelay: `${index * 0.1}s`}}
+                        
                       >
                         {tech}
                       </span>

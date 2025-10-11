@@ -43,7 +43,7 @@ const projects = [
     image: p4,
     techStack: ["Javascript", "Firebase"],
     github: "https://github.com/ankitpradhan/social-platform",
-    demo: "https://social-platform-demo.vercel.app",
+    demo: "https://ownchoicevolunteerocv-ankitpradhan.netlify.app/",
     themeColor: "#FFD700",
     hoverColor: "#DAA520"
   }

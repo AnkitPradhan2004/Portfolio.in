@@ -83,7 +83,7 @@ const About = () => {
               About Me
             </h2>
             <p className="leading-relaxed text-gray-800 dancing-script-text">
-              My name is <strong>Ankit Pradhan</strong>, a passionate developer driven by creativity, precision, and purpose.
+             My name is <strong>Ankit Kumar Pradhan</strong>, a passionate developer driven by creativity, precision, and purpose.
               For me, a project isn’t just about building—it’s about crafting meaningful digital experiences that feel effortless,
               look stunning, and truly connect with users. I love turning ideas into clean, functional, and scalable solutions that
               merge aesthetic design with powerful code. Every line I write is focused on impact, performance, and innovation.

@@ -7,6 +7,12 @@ const skills = [
   "Vercel", "Firebase", "Postman", "Render", "npm", "Redis"
 ];
 
+const softSkills = [
+  "Adaptive Communication & Adaptability",
+  "Collaborative Leadership",
+  "Emotional Intelligence (EQ)"
+];
+
 const half = Math.ceil(skills.length / 2);
 const leftSkills = skills.slice(0, half);
 const rightSkills = skills.slice(half);
@@ -15,7 +21,7 @@ const Services = () => {
   return (
     <>
       {/* Title */}
-      <div className="bg-black text-white w-full">
+      <div id="skills" className="bg-black text-white w-full">
         <div className="w-full px-4 sm:px-6 md:px-8 lg:px-12 pb-6 sm:pb-8 lg:pb-12">
           <h3 className="text-2xl mt-14 sm:text-3xl md:text-4xl font-mono font-bold text-center text-white uppercase">&lt;Skill/&gt;</h3>
         </div>
@@ -23,7 +29,7 @@ const Services = () => {
 
       {/* Skills Section */}
       <div className="relative w-full z-10">
-        <div className="bg-black text-white pt-8 pb-8 sm:pt-10 sm:pb-10 lg:pt-20 lg:pb-60 w-full">
+        <div className="bg-black text-white pt-8 pb-8 sm:pt-10 sm:pb-10 lg:pt-20 lg:pb-20 w-full">
           <div className="w-full px-4 sm:px-6 md:px-8 lg:px-12">
             
             {/* Desktop Layout */}
@@ -95,6 +101,26 @@ const Services = () => {
         </div>
       </div>
 
+      {/* Soft Skills Section */}
+      <div className="relative w-full z-10 bg-black text-white pb-16 sm:pb-20 lg:pb-40">
+        <div className="w-full px-4 sm:px-6 md:px-8 lg:px-12">
+          <h4 className="text-xl sm:text-2xl md:text-3xl font-mono font-bold text-center text-white uppercase mb-6 sm:mb-8 lg:mb-10">
+            &lt;SoftSkills/&gt;
+          </h4>
+          <div className="w-full max-w-5xl mx-auto flex flex-wrap items-stretch justify-center gap-3 sm:gap-4 lg:gap-5">
+            {softSkills.map((skill, i) => (
+              <div
+                key={i}
+                className="px-4 py-2.5 sm:px-5 sm:py-3 rounded-lg text-sm sm:text-base font-semibold soft-skill-text text-center"
+                style={{ animationDelay: `${i * 0.15}s` }}
+              >
+                {skill}
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+
       {/* Skill Text Animations */}
       <style jsx>{`
         @keyframes floatText {
@@ -148,6 +174,46 @@ const Services = () => {
 
         @media (max-width: 640px) {
           .skill-text:hover {
+            transform: translateY(-2px) scale(1.01);
+          }
+        }
+
+        .soft-skill-text {
+          background: linear-gradient(135deg, #0a0a0a 0%, #141822 50%, #0a0a0a 100%);
+          color: #e5e7eb;
+          border: 1px solid #334155;
+          box-shadow: 0 2px 10px rgba(0, 0, 0, 0.35);
+          position: relative;
+          overflow: hidden;
+          transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+          animation: floatText 2.4s ease-in-out infinite, slideInRight 0.9s ease forwards;
+        }
+
+        .soft-skill-text::before {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: -100%;
+          width: 100%;
+          height: 100%;
+          background: linear-gradient(90deg, transparent, rgba(96, 165, 250, 0.12), transparent);
+          transition: left 0.6s ease;
+        }
+
+        .soft-skill-text:hover::before {
+          left: 100%;
+        }
+
+        .soft-skill-text:hover {
+          transform: translateY(-4px) scale(1.02);
+          background: linear-gradient(135deg, #1e293b 0%, #334155 50%, #1e293b 100%);
+          border-color: #60a5fa;
+          color: #ffffff;
+          box-shadow: 0 12px 30px rgba(96, 165, 250, 0.25);
+        }
+
+        @media (max-width: 640px) {
+          .soft-skill-text:hover {
             transform: translateY(-2px) scale(1.01);
           }
         }

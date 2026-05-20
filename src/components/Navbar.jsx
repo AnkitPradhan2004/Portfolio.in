@@ -59,6 +59,7 @@ const Navbar = () => {
           <div className="hidden xl:flex items-center gap-6 xl:gap-8">
             <a href="#" onClick={(e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }); }} className="text-white hover:text-blue-400 transition-colors text-sm lg:text-base cursor-pointer">Home</a>
             <a href="#about" className="text-white hover:text-blue-400 transition-colors text-sm lg:text-base">About Me</a>
+            <a href="#skills" className="text-white hover:text-blue-400 transition-colors text-sm lg:text-base">Skills</a>
             <a href="#projects" className="text-white hover:text-blue-400 transition-colors text-sm lg:text-base">Projects</a>
             <a href="#contact" className="text-white hover:text-blue-400 transition-colors text-sm lg:text-base">Contact</a>
             <button onClick={handleResumeClick} className="text-white hover:text-blue-400 transition-colors text-sm lg:text-base cursor-pointer bg-transparent border-none p-0">Resume</button>
@@ -103,6 +104,7 @@ const Navbar = () => {
         >
           <a href="#" onClick={(e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }); setMenuOpen(false); }} className="menu-link cursor-pointer">Home</a>
           <a href="#about" onClick={() => setMenuOpen(false)} className="menu-link">About Me</a>
+          <a href="#skills" onClick={() => setMenuOpen(false)} className="menu-link">Skills</a>
           <a href="#projects" onClick={() => setMenuOpen(false)} className="menu-link">Projects</a>
           <a href="#contact" onClick={() => setMenuOpen(false)} className="menu-link">Contact</a>
           <button onClick={handleResumeClick} className="menu-link cursor-pointer bg-transparent border-none p-0">Resume</button>
@@ -117,6 +119,7 @@ const Navbar = () => {
         >
           <a href="#" onClick={(e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }); setMenuOpen(false); }} className="mobile-menu-link cursor-pointer">Home</a>
           <a href="#about" onClick={() => setMenuOpen(false)} className="mobile-menu-link">About Me</a>
+          <a href="#skills" onClick={() => setMenuOpen(false)} className="mobile-menu-link">Skills</a>
           <a href="#projects" onClick={() => setMenuOpen(false)} className="mobile-menu-link">Projects</a>
           <a href="#contact" onClick={() => setMenuOpen(false)} className="mobile-menu-link">Contact</a>
           <button onClick={handleResumeClick} className="mobile-menu-link cursor-pointer bg-transparent border-none p-0">Resume</button>
